@@ -1,0 +1,30 @@
+drupal:
+    image: vchn/drupalapp:d7drush
+
+    external_links:
+    - <db_host>
+    ports:
+        - "<port>:80"
+    volumes:
+    - ./docroot/:/var/www/html/
+    - ./startup/:/startup/
+    environment:
+        - TZ=Asia/Saigon
+        - DRUPAL_PROFILE=ffwvn
+        - DRUPAL_SITE_NAME=Drupal_CI
+        - DRUPAL_USER=<username>
+        - DRUPAL_PASSWORD=<userpass>
+        - DRUPAL_USER_EMAIL=<usermail>
+        - DB_USER=<db_user>
+        - DB_PASS=<db_pass>
+        - DB_HOST=<db_host>
+        - DB_TYPE=mysql
+        - DB_NAME=<db_name>
+    hostname: drupal
+    domainname: coclab.lan
+    cpu_shares: 512             # 0.5 CPU
+    mem_limit: 128m        # 128 MB RAM
+    #privileged: true
+    restart: always
+    #stdin_open: true
+    #tty: true
