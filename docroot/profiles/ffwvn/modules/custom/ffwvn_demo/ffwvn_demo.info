@@ -1,0 +1,7 @@
+name = Example block
+description = Create custom block
+package = Examples
+core = 7.x
+
+version = "7.x.dev"
+

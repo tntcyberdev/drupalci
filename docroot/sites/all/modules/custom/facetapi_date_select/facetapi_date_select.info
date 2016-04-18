@@ -1,0 +1,10 @@
+name = Facetapi Date Select
+description = Display search facets field date as select dropdowns
+package = Search
+core = 7.x
+dependencies[] = facetapi
+
+files[] = plugins/facetapi/FacetapiDateSelect.inc
+
+version = "7.x-1.0"
+core = "7.x"
