@@ -1,5 +1,5 @@
-name = FFW Vietnam
-description = Install with FFW Vietnam profile.
+name = Starter
+description = Install with starter profile.
 version = 7.0.1
 
 core = 7.x

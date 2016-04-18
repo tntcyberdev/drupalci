@@ -7,8 +7,8 @@
 /**
  * Implements hook_block_info().
  */
-function ffwvn_demo_block_info() {
-  $blocks['ffwvn_demo'] = array(
+function starter_demo_block_info() {
+  $blocks['starter_demo'] = array(
     'info' => t('Example block'),
     'cache' => DRUPAL_NO_CACHE
   );
@@ -19,11 +19,11 @@ function ffwvn_demo_block_info() {
 /**
  * Implements hook_block_view().
  */
-function ffwvn_demo_block_view($delta = '') {
+function starter_demo_block_view($delta = '') {
   $block = array();
 
   switch ($delta) {
-    case 'ffwvn_demo':
+    case 'starter_demo':
       $block['subject'] = t('Drupal CI');
       $block['content'] = '<p>Hello Drupal - CI - Docker</p>';
       break;

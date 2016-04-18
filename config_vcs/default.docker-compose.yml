@@ -10,7 +10,7 @@ drupal:
     - ./startup/:/startup/
     environment:
         - TZ=Asia/Saigon
-        - DRUPAL_PROFILE=ffwvn
+        - DRUPAL_PROFILE=starter
         - DRUPAL_SITE_NAME=Drupal_CI
         - DRUPAL_USER=<username>
         - DRUPAL_PASSWORD=<userpass>

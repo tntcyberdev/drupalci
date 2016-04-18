@@ -7,7 +7,7 @@
 /**
  * Implements hook_install().
  */
-function ffwvn_install() {
+function starter_install() {
   // Enable the admin theme.
   $admin_theme = 'seven';
   db_update('system')
@@ -32,8 +32,8 @@ function ffwvn_install() {
       'cache' => -1,
     ),
     array(
-      'module' => 'ffwvn_demo',
-      'delta' => 'ffwvn_demo',
+      'module' => 'starter_demo',
+      'delta' => 'starter_demo',
       'theme' => $default_theme,
       'status' => 1,
       'weight' => 0,
