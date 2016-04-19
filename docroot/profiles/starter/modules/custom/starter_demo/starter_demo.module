@@ -9,7 +9,7 @@
  */
 function starter_demo_block_info() {
   $blocks['starter_demo'] = array(
-    'info' => t('Example block'),
+    'info' => t('[Custom] Example block'),
     'cache' => DRUPAL_NO_CACHE
   );
 
