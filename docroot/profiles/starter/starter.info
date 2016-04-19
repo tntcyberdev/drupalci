@@ -4,6 +4,7 @@ version = 7.0.1
 
 core = 7.x
 
+; Core contrib for project
 dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
@@ -25,4 +26,5 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
 
-dependencies[] = ffwvn_demo
+; Custom code for project
+dependencies[] = starter_demo
