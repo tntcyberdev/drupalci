@@ -14,3 +14,19 @@ function starter_form_permission() {
     ),
   );
 }
+
+/**
+ * Implements hook_menu().
+ */
+function starter_form_menu() {
+  $items['admin/config/development/exform'] = array(
+    'title' => 'Example form',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('admin_example_form_config'),
+    'access arguments' => array('admin settings example form'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'starter_form.admin.inc',
+  );
+
+  return $items;
+}
