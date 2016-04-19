@@ -3,3 +3,14 @@
  * @file
  */
 
+/**
+ * Implements hook_permission().
+ */
+function starter_form_permission() {
+  return array(
+    'admin settings example form' =>  array(
+      'title' => t('Admin settings example form'),
+      'description' => t('Settings element form allow display.'),
+    ),
+  );
+}
