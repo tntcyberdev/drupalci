@@ -25,4 +25,4 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
 
-dependencies[] = ffwvn_demo
+dependencies[] = starter_demo
