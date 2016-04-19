@@ -28,3 +28,4 @@ dependencies[] = rdf
 
 ; Custom code for project
 dependencies[] = starter_demo
+dependencies[] = starter_form
