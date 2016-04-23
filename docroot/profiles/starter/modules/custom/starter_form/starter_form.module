@@ -1,0 +1,32 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_permission().
+ */
+function starter_form_permission() {
+  return array(
+    'admin settings example form' =>  array(
+      'title' => t('Admin settings example form'),
+      'description' => t('Settings element form allow display.'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function starter_form_menu() {
+  $items['admin/config/development/exform'] = array(
+    'title' => 'Example form',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('admin_example_form_config'),
+    'access arguments' => array('admin settings example form'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'starter_form.admin.inc',
+  );
+
+  return $items;
+}
