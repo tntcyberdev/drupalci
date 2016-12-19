@@ -9,7 +9,7 @@
  */
 function starter_demo_block_info() {
   $blocks['starter_demo'] = array(
-    'info' => t('Example block'),
+    'info' => t('[Custom] Example block'),
     'cache' => DRUPAL_NO_CACHE
   );
 
@@ -24,8 +24,10 @@ function starter_demo_block_view($delta = '') {
 
   switch ($delta) {
     case 'starter_demo':
+      global $user;
+      $name = $user->uid ? $user->name : 'Anonymous';
       $block['subject'] = t('Drupal CI');
-      $block['content'] = '<p>Hello Drupal - CI - Docker</p>';
+      $block['content'] = t('<p>Hi @name! This is example block content</p>', array('@name' => $name));
       break;
 
   }
